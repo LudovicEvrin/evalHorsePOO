@@ -3,6 +3,7 @@
 namespace App\Model;
 
 use App\Model\Animal;
+use App\Model\HumanCategories\Rider;
 
 abstract class Equine extends Animal
 {

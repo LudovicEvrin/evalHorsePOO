@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Model;
+namespace App\Model\EquineCategories;
 
 use App\Model\Equine;
+use App\Model\HumanCategories\Rider;
 
 class Horse extends Equine
 {

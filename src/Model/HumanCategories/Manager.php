@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Model;
+namespace App\Model\HumanCategories;
 
 use App\Model\Human;
 
-class Rider extends Human
+class Manager extends Human
 {
 
     public function __construct(string $name, string $street, string $postCode, string $city, string $category)
