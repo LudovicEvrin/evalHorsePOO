@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Model;
+
+use App\Model\Human;
+
+class Manager extends Human
+{
+
+    public function __construct(string $name, string $street, string $postCode, string $city, string $category)
+    {
+        parent::__construct($name, $street, $postCode, $city, $category);
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        $msg = parent::__toString();
+
+        return $msg;
+    }
+}
