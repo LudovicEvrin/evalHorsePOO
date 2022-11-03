@@ -11,6 +11,7 @@ use App\Model\Capabilities\Cross;
 use App\Model\Capabilities\Jump;
 use App\Model\Capabilities\Training;
 use App\Model\Capabilities\PoneyGames;
+use App\Model\Stable;
 
 $man1 = new Manager("Henry Cross","13 street of The Beatles","54000","London","Manager");
 $rid1 = new Rider("Bob Ross","1 street Blue","13400","Rome","Rider");
@@ -33,8 +34,12 @@ $eve2 = new Jump(15, 300,  "Jump");
 $eve3 = new Training(30, 155, "Training");
 $eve4 = new PoneyGames(20, 50, "PoneyGames");
 
-echo "Creation of 4 events\n";
+/* echo "Creation of 4 events\n";
 echo $eve1;
 echo $eve2;
 echo $eve3;
-echo $eve4;
+echo $eve4; */
+
+$sta1 = new Stable("Stable of Norway","45 street of Cold","54000","Oslo",$man1);
+
+echo $sta1;
