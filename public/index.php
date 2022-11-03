@@ -20,26 +20,26 @@ $rid1 = new Rider("Bob Ross","1 street Blue","13400","Rome","Rider");
 echo $man1;
 echo $rid1; */
 
-$che1 = new Horse("IDA","Bai",25,"Horse",$rid1);
-$pon1 = new Poney("ODA","Alzan",20,"Poney",$rid1);
-$she1 = new Sheitland("FBN","Grey",10,"Sheitland",$rid1);
+$che1 = new Horse("IDA","Bai",25, $rid1);
+$pon1 = new Poney("ODA","Alzan",20, $rid1);
+$she1 = new Sheitland("FBN","Grey",10, $rid1);
 
-/* echo "Creation of a horse, poney and sheitland\n";
-echo $che1;
+/* echo "Creation of a horse, poney and sheitland\n"; */
+/* echo $che1;
 echo $pon1;
 echo $she1; */
 
-$eve1 = new Cross(10, 150, "Cross");
-$eve2 = new Jump(15, 300,  "Jump");
-$eve3 = new Training(30, 155, "Training");
-$eve4 = new PoneyGames(20, 50, "PoneyGames");
+$eve1 = new Cross();
+$eve2 = new Jump();
+$eve3 = new Training();
+$eve4 = new PoneyGames();
 
-/* echo "Creation of 4 events\n";
+echo "Creation of 4 events\n";
 echo $eve1;
 echo $eve2;
 echo $eve3;
-echo $eve4; */
+echo $eve4;
 
 $sta1 = new Stable("Stable of Norway","45 street of Cold","54000","Oslo",$man1);
 
-echo $sta1;
+/* echo $sta1; */

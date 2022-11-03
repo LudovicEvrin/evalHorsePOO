@@ -13,12 +13,11 @@ abstract class Equine extends Animal
     private string $category;
     private Rider $Rider;
 
-    public function __construct(string $id, string $color, int $water, string $category, Rider $rider)
+    public function __construct(string $id, string $color, int $water, Rider $rider)
     {
         $this->setId($id)
             ->setColor($color)
             ->setWater($water)
-            ->setCategory($category)
             ->setRider($rider);
     }
 

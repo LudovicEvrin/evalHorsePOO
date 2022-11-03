@@ -8,8 +8,9 @@ use App\Model\HumanCategories\Rider;
 class Horse extends Equine
 {
 
-    public function __construct(string $id, string $color, int $water, string $category, Rider $rider)
+    public function __construct(string $id, string $color, int $water, Rider $rider)
     {
-        parent::__construct($id, $color, $water, $category, $rider);
+        parent::__construct($id, $color, $water, $rider);
+        $this->setCategory("Horse");
     }
 }

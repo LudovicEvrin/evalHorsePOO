@@ -2,13 +2,13 @@
 
 namespace App\Model\Capabilities;
 
-use App\Model\Event;
+use App\Model\Capability;
 
-class Jump extends Event
+class Jump extends Capability
 {
 
-    public function __construct(int $maxCommitments, int $maxWater, string $typeEvent)
+    public function __construct()
     {
-        parent::__construct($maxCommitments, $maxWater, $typeEvent);
+        $this->setName("Jump");
     }
 }
