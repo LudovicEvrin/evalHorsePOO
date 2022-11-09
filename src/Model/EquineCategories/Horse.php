@@ -12,6 +12,6 @@ class Horse extends Equine
     {
         parent::__construct($color, $water, $rider);
         $this->setCategory("Horse");
-        $this->setId("000-" . substr($this->getCategory(), -1) . "-" . substr($this->getColor(), -1) . "-");
+        $this->setId("000-" . $this->getCategory()[0] . "-" . $this->getColor()[0] . "-");
     }
 }
