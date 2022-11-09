@@ -12,11 +12,11 @@ abstract class Equine extends Animal
     private int $water;
     private string $category;
     private Rider $Rider;
+    private static $count=0;
 
-    public function __construct(string $id, string $color, int $water, Rider $rider)
+    public function __construct(string $color, int $water, Rider $rider)
     {
-        $this->setId($id)
-            ->setColor($color)
+        $this->setColor($color)
             ->setWater($water)
             ->setRider($rider);
     }
@@ -126,13 +126,17 @@ abstract class Equine extends Animal
         return $this;
     }
 
+    public function count() {
+        return ++$this::$count;
+    }
+
     /**
      * @return string
      */
     public function __toString(): string
     {
         $msg = "Informations of an Equine :\n";
-        $msg .= "Id : {$this->getId()}\n";
+        $msg .= "ID : {$this->getId()}"."{$this->count()}\n";
         $msg .= "Color : {$this->getColor()}\n";
         $msg .= "Water qunatity needed : {$this->getWater()}\n";
         $msg .= "Category : {$this->getCategory()}\n";
